@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>CRUD Companies</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="row mb-3 mt-3">
+            <div class="col-md-2">
+                <a  class="btn btn-success">Go to companies</a>
+            </div>
+            <div class="col-md-2">
+                <a href="employes.html" class="btn btn-info">Go to employes</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h1>companies</h1>
+            </div>
+            <div class="card-body">
+                <form action="" name="formCompanies">
+                    <div class="form-group">
+
+                        <div class="mb-3">
+                            <label class="form-label">ID</label>
+                            <input type="text" class="form-control" name="formId" placeholder="Id company" readonly style="background-color: rgb(231, 230, 230);">
+                        </div> 
+
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" name="formName" placeholder="enter name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Description</label>
+                            <input type="text" class="form-control" name="formDescription" placeholder="enter description">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Founder</label>
+                            <input type="text" class="form-control" name="formFounder" placeholder="enter founder">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Logo</label>
+                            <input type="url" class="form-control" name="formLogo" placeholder="enter url logo">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Web site</label>
+                            <input type="url" class="form-control" name="formWeb" placeholder="enter web site">
+                        </div>
+                    </div>
+
+                    <button  type="button" class="btn btn-primary" id="btnSendForm">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <table class="mt-3 table" id="tableCompanies">
+            <tr>
+                <th >id</th>
+                <th >name</th>
+                <th >description</th>
+                <th >founder</th>
+                <th >logo</th>
+                <th >Actions</th>
+            </tr>
+        </table>  
+
+        <!-- MODAL PARA DETALLES -->
+        <div id="MymodalDetails" class="modaldetails">
+            <div class="modal-dialog">
+                <div class="modal-contentDetails">
+                    <div class="modal-header">
+                        <h3>DETAILS COMPANIES</h3>
+                        <span class="closeDetails">&times;</span>
+                    </div>
+
+                    <div class="modal-body">
+                        <table class="table" name="tableDetails">
+                            <tbody class="tbodydetails">
+
+                                <tr>
+                                    <th>ID</th>
+                                    <td id="idcompany"></td>
+                                </tr>
+                                <tr>
+                                    <th>NAME</th>
+                                    <td id="namecompany"></td>
+                                </tr>
+                                <tr>
+                                    <th>DESCRIPTION</th>
+                                    <td id="descriptioncompany"></td>
+                                </tr>
+                                <tr>
+                                    <th>FOUNDER</th>
+                                    <td id="foundercompany"></td>
+                                </tr>
+                                <tr>
+                                    <th>LOGO</th>
+                                    <td id="logocompany"></td>
+                                </tr>
+                                <tr>
+                                    <th>WEB SITE</th>
+                                    <td id="websitecompany"></td>
+                                </tr>
+        
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="./JS/companies.js"></script>
+    </div>
+</body>
+</html>

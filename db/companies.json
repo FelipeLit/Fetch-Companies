@@ -1,0 +1,35 @@
+{
+  "companies": [
+    {
+      "id": "5648",
+      "name": "Coca-Cola",
+      "description": "Corporacion multinacional de bebidas estado unidense",
+      "founder": "Asa Griggs Candler",
+      "logo": "https://www.logo.com",
+      "webSite": "https://www.entuhogar.coca-cola.com.co/productos"
+    },
+    {
+      "id": "6bbd",
+      "name": "Riwi",
+      "description": "Crear desarroladores de Software",
+      "founder": "Thomas",
+      "logo": "https://github.com/",
+      "webSite": "https://github.com/"
+    }
+  ],
+  "employes": [
+    {
+      "id": "2e57",
+      "idCompany": "5648",
+      "documentNumber": "1040",
+      "Name": "Felipe",
+      "lastName": "Gallego",
+      "email": "gallego@gmail.com",
+      "position": "Junior",
+      "admissionDate": "2024-01-02",
+      "status": "activo",
+      "cv": "si",
+      "website": "https://felipe.com"
+    }
+  ]
+}
