@@ -60,7 +60,7 @@ let result = fetch("http://localhost:3000/companies")
             btnDetails.innerHTML= 'See details'
             btnDetails.classList.add('btn', 'btn-primary', 'me-2')
             btnDetails.setAttribute('id', 'btn-details')
-            btnDetails.setAttribute('onclick', `openDetails(${Datacompany.id})`);
+            btnDetails.setAttribute('onclick', `openDetails('${Datacompany.id}')`);
             row.appendChild(btnDetails)
             
             let btnEdit = document.createElement("button");
